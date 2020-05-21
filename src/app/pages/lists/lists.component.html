@@ -1,0 +1,35 @@
+<div class="lists-container">
+  <h1>Appointment Lists</h1>
+
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let appointment of appointments;" >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{appointment.first_name}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ appointment.time_slot }} on {{ appointment.booking_date }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-label><span>First Name </span> : {{appointment.first_name}}</mat-label>
+      <br>
+      <mat-label><span>Last Name </span> : {{appointment.last_name}}</mat-label>
+      <br>
+      <mat-label><span>Email </span> : {{appointment.email}}</mat-label>
+      <br>
+      <mat-label><span>Phone No </span> : {{appointment.phone_no}}</mat-label>
+      <br>
+      <mat-label><span>Address </span> : {{appointment.address}}</mat-label>
+      <br>
+      <mat-label><span>Age </span> : {{appointment.age}}</mat-label>
+      <br>
+      <mat-label><span>Time </span> : {{appointment.time_slot}}</mat-label>
+      <br>
+      <mat-label><span>Date </span> : {{appointment.booking_date}}</mat-label>
+      <br>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+</div>
